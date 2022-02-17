@@ -6,25 +6,25 @@
     <title>PPNUM21-02-34</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./script/script.js" defer></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="./style/stylejquery.css" />
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="subnav">
-                <img src="./menu.svg" alt="" class="burgerButton" width="40px">
-                <div>
-                    <img src="./collecte-de-donnees.svg" alt="" class="brand" width="45px">
-                    <h1>Monsite</h1>
-                </div>
-            </div>
-            <ul>
-                <a><li>Home</li></a>
-                <a><li>Test</li></a>
-                <a><li>hello</li></a>
-            </ul>
-            <!-- créer une liste ul avec  des li à intérieur -->            
-        </nav>
-    </header>
+    <!-- menu -->
+    <ul class="menu">
+        <li><a href="#">Home</a>
+            <li><a href="#">stagiaires</a>
+                <ul>
+                    <!-- à compléter -->
+                    <li><a href="mathieu.html">mathieu</a></li>
+                    <li><a href="test.html">test</a></li>
+                    <li><a href="test2.html">test2</a></li>                    
+                </ul>
+            </li>
+    </ul>
     <section>
         <h1 class="strong">NOM Prénom</h1>
         <h2>PPNUM21-02-34</h2>
@@ -39,4 +39,16 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur repudiandae blanditiis? Rerum consectetur facere quidem quibusdam tenetur, quam totam id iure pariatur? Voluptatum exercitationem nesciunt non consectetur excepturi at!</p>
     </section>
 </body>
+<!-- fonction menu -->
+<script>
+    //fonction js pour le menu
+    $(document).ready(function(){ 
+
+    $(".menu li").hover(function(){
+        $('ul:first',this).stop().slideDown();
+    },function(){
+        $('ul:first',this).stop().slideUp();  
+    });
+    });
+</script>
 </html>
