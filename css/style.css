@@ -1,0 +1,37 @@
+/*-------------------------------------------------------
+----------------------Block Menu-------------------------
+-------------------------------------------------------*/
+#menu {
+	list-style: none;
+	padding:0;	
+	top: 14.5em;
+	width: 50%x;
+	margin-left:auto;
+    margin-right:auto;    
+}
+
+li.menu {
+    list-style: none;
+	margin-left:70px;
+	margin-right:auto;
+    float: left;    
+}
+
+.menu a {
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #CCCCCC; 
+	text-decoration: none;
+	color: rgb(251, 251, 253); 
+	background: rgb(31, 150, 230);
+	border-spacing: 1px;
+    padding-left: 5px;
+	padding-right: 5px;
+    height: 35px;
+}
+div.connexion{
+	height: auto;
+	width: 600px;
+	background: aquamarine;
+}
