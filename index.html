@@ -10,17 +10,29 @@
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" href="./style/stylejquery.css" />
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-            <ul>
-                <!-- exemple avec un fichier mathieu.html -->
-                <li><a href="mathieu.html">mathieu</a></li>
-                <!-- ajouter les fichiers suivants -->
-            </ul>
-        </li>
+        <li><a href="#">Home</a>
+            <li><a href="#">stagiaires</a>
+                <ul>
+                    <li><a href="mathieu.html">mathieu</a></li>
+                    <li><a href="test.html">test</a></li>
+                    <li><a href="test2.html">test2</a></li>                    
+                </ul>
+            </li>
     </ul>
 </body>
+<script>
+    //fonction js pour le menu
+    $(document).ready(function(){ 
+
+    $(".menu li").hover(function(){
+        $('ul:first',this).stop().slideDown();
+    },function(){
+        $('ul:first',this).stop().slideUp();  
+    });
+    });
+</script>
 </html>
