@@ -1,116 +1,36 @@
-/* menu css */
-body, html{
-    margin: 0;
-    padding: 0;
+/*-------------------------------------------------------
+----------------------Block Menu-------------------------
+-------------------------------------------------------*/
+#menu {
+	list-style: none;
+	padding:0;	
+	top: 14.5em;
+	width: 50%x;
+	margin-left:auto;
+    margin-right:auto;    
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: #351f39;
-}
-nav ul{
-    display: flex;
-    padding-right: 50px;
-    background-color: #351f39;
-}
-nav a{
-    text-decoration: none;
-}
-nav li{
-    padding: 10px;
-    margin-left: 50px;
+
+li.menu {
     list-style: none;
-    color: #a0c1b8;
-    border: solid #a0c1b8 1px;
-    border-radius: 5px;
-    font-family: Roboto;
-    cursor: pointer;
-}
-nav li:hover{
-    background-color: #a0c1b8;
-    border-color:#351f39;
-    color:#351f39;
-}
-nav .burgerButton{
-    margin: 10px;
-    cursor: pointer;
-    display: none;
+	margin-left:70px;
+	margin-right:auto;
+    float: left;    
 }
 
-nav .brand{
-    margin: 10px;
-    cursor: pointer;   
+.menu a {
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #CCCCCC; 
+	text-decoration: none;
+	color: rgb(251, 251, 253); 
+	background: rgb(31, 150, 230);
+	border-spacing: 1px;
+    padding-left: 5px;
+	padding-right: 5px;
 }
-.subnav{
-    display: flex;
-    background-color:#351f39; 
+div.connexion{
+	height: auto;
+	width: 600px;
+	background: aquamarine;
 }
-
-nav .subnav>div {
-    display: flex;
-    color:#a0c1b8 ;
-    font-family: Roboto;
-}
-/* menu animation*/
-@media screen and (max-width: 600px){
-
-    nav{
-        justify-content: center;
-        flex-direction: column;
-        z-index: 0;
-        background-color: transparent;
-    }
-    nav ul{
-        z-index: 1;
-        flex-direction: column;
-        margin-top: -10px;
-        padding-bottom: 20px;
-        display: none;
-      
-    }
-    .subnav{
-        z-index: 10;
-    }
-
-    nav li{
-        z-index: 2;
-        margin-top: 20px;
-        margin-left: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: large;
-    }
-  
-    nav .burgerButton{
-        margin: 10px;
-        cursor: pointer;
-        display: flex;
-    }
-    
-    nav>.subnav>div{
-        display: none;
-    }   
-}
-
-@keyframes slidein {
-    from {
-      transform: translate3d(0, -100%, 0);      
-      visibility: visible;
-    }
-  
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }  
-  
-@keyframes slideout {
-    from {
-        transform: translate3d(0, 0, 0);
-      }
-    
-      to {
-        visibility: hidden;
-        transform: translate3d(0, -100%, 0);
-      }
-  }
-
